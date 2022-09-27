@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bài tập tuần 5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="tuan5.css">  
+    </head>
+    <body>
+        <h1 style="font-family: 'Times New Roman', Times, serif;"><center> HOA THỊ THANH-B19DCDT216</h3>
+        <div class="row">
+            <div class="col" id="nhietDo">
+                <h2>NHIỆT ĐỘ</h2>
+                <p id="randomNhietDo" onchange="fsRandomNhietDo()"> </p>
+            </div>
+            <div class="col" id="doAm">
+                <h2>ĐỘ ẨM</h2>
+                <p id="randomDoAm" onchange="fsRandomDoAm()" > </p>
+            </div>
+            <div class="col" id="anhSang">
+                <h2>ÁNH SÁNG</h2>
+                <p id="randomAnhSang" onchange="fsRandomAnhSang()"> </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+         
+                <script src="https://code.highcharts.com/highcharts.js"></script>
+                <script src="https://code.highcharts.com/modules/series-label.js"></script>
+                <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                <script src="https://code.highcharts.com/modules/export-data.js"></script>
+                <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+                <script src="tuan5.js"></script>
+                <figure class="highcharts-figure">
+                <div id="container"></div>
+                <p class="highcharts-description">
+                
+                </p>
+                </figure>
+               
+            </div>
+            < <div class="col">
+				<div class="led1" id="nutall" >
+                    <h2>CÔNG TẮC 1</h2><br>
+					<img id="myImage" src="bongdensang.png"><br>
+                    <button type="myImage" class="btn btn-success" onclick="on()">ON</button>
+                    <button type="myImage" class="btn btn-danger" onclick="off()">OFF</button>
+					
+				</div> <br>
+				<div class="led2">
+                    <h2>CÔNG TẮC 2</h2><br>
+					<img id="led2" src="bongdensang.png"><br>
+					<label class="switch">
+						<input onclick="led2()" type="checkbox">
+						<span class="slider round"></span>
+					  </label>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
